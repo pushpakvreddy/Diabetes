@@ -15,7 +15,7 @@ y = df['diabetes']
 
 # Now split
 x_train, x_test, y_train, y_test = train_test_split(
-    x, y, test_size=0.2, random_state=42
+    x, y, test_size=0.3, random_state=42
 )
 
 # Train model
@@ -29,3 +29,4 @@ y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 print("Accuracy:", accuracy)
+
